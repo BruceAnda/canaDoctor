@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    tools:context="ac.cn.ict.canadoctor.ui.fragment.PersonFragment">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <ac.cn.ict.canadoctor.ui.widget.PersonItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:person_content="张三"
+        app:person_title="姓名" />
+
+    <ac.cn.ict.canadoctor.ui.widget.PersonItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:person_content="性别"
+        app:person_title="女" />
+
+    <ac.cn.ict.canadoctor.ui.widget.PersonItemView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:person_content="所属医院"
+        app:person_title="北京协和医院" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notifications_none_black_24dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="消息提醒" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_logout_selector"
+        android:text="登出"
+        android:textColor="@android:color/white" />
+</LinearLayout>

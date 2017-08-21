@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PersonItemView">
+        <attr name="person_title" format="string" />
+        <attr name="person_content" format="string" />
+    </declare-styleable>
+</resources>
